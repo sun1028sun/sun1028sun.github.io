@@ -40,10 +40,9 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-  name = "Lruihao"
-  email = "1024@lruihao.cn"
-  link = "https://github.com/Lruihao"
-  avatar = ""
+  name = "_sun_·empty."
+  email = "sz1310272435@163.com"
+  link = "https://sun1028.top"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
@@ -115,7 +114,7 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/hugo-fixit-starter/images/fixit.min.svg"
+    logo = ""
     # title name
     name = ""
     # you can add extra information before the name (HTML format is supported), such as icons
@@ -150,37 +149,49 @@ disableThemeInject = false
 # Footer config
 [footer]
   enable = true
-  # whether to show copyright info
+  # 显示版权信息
   copyright = true
-  # whether to show the author
+  # 显示作者
   author = true
-  # Site creation year
-  since = 2021
-  # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
+  # 1. 建站年份 (改成你现在的年份)
+  since = 2025
+  
   gov = ""
-  # ICP info only in China (HTML format is supported)
   icp = ""
-  # license info (HTML format is supported)
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
-  # FixIt 0.3.0 | NEW whether to show Hugo and theme info
+  
+  # 显示 "Powered by Hugo & FixIt"
   [footer.powered]
     enable = true
     hugoLogo = true
     themeLogo = true
-  # FixIt 0.2.17 | CHANGED Site creation time
+    
+  # 2. 建站时间配置 (关键修改点)
   [footer.siteTime]
-    enable = false
+    enable = true
     animate = true
     icon = "fa-solid fa-heartbeat"
-    pre = ""
-    value = "" # e.g. "2021-12-18T16:15:22+08:00"
-  # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
+    pre = "本站已运行"
+    # 之前这里是空的，必须填入准确时间格式
+    value = "2025-12-01T00:00:00+08:00" 
+    
+  # 页脚元素排序
   [footer.order]
     powered = 0
     copyright = 0
     statistics = 0
     visitor = 0
     beian = 0
+
+# ----------------------------------------------------------------------
+# 3. 必须在 [footer] 模块外面添加 [ibruce] 才能显示访问人数
+# 请确保这一段加在 [footer] 模块的下面
+# ----------------------------------------------------------------------
+[ibruce]
+  enable = true
+  enableSiteUV = true
+  enableSitePV = true
+  enablePagePV = true
 
 # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
 [archives]
@@ -237,9 +248,9 @@ disableThemeInject = false
   [home.profile]
     enable = true
     # Gravatar Email for preferred avatar in home page
-    gravatarEmail = "xx@xx.com"
+    gravatarEmail = ""
     # URL of avatar shown in home page
-    avatarURL = ""
+    avatarURL = "/img/s.jpg"
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = ""
     # title shown in home page (HTML format is supported)
@@ -260,7 +271,7 @@ disableThemeInject = false
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
-  GitHub = ""
+  GitHub = "sun1028sun"
   Linkedin = ""
   Twitter = ""
   Instagram = ""
@@ -327,7 +338,7 @@ disableThemeInject = false
   Ko-Fi = ""
   BuyMeaCoffee = ""
   Linktree = ""
-  QQ = ""
+  QQ = "1310272435"
   QQGroup = "" # https://qun.qq.com/join.html
   Diaspora = ""
   CSDN = ""
@@ -346,7 +357,7 @@ disableThemeInject = false
   TikTok = ""
   Credly = ""
   Phone = ""
-  Email = ""
+  Email = "sz1310272435@163.com"
   RSS = true
   # custom social links like the following
   # [social.twitter]
