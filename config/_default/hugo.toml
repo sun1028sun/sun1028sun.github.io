@@ -3,11 +3,18 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt Blog"
-baseURL = "https://hugo-fixit.github.io/hugo-fixit-starter/"
+# 1. 这里改成你的博客标题
+title = "_sun_empty's Blog"
+
+# 2. 【核心】这里必须改成你的 GitHub Pages 根地址，注意最后要有斜杠 /
+baseURL = "https://sun1028sun.github.io/"
+
 # theme = "FixIt"
-defaultContentLanguage = "en"
-languageCode = "en"
+
+# 3. 这里改成中文，界面就会显示中文了
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-CN"
+
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -15,6 +22,7 @@ enableGitInfo = true
 relativeURLs = false
 buildDrafts = false
 summaryLength = 150
+# ...下面的 ignoreLogs 保持不变...
 # ignore some build errors
 ignoreLogs = [
   "error-get-remote-image",
